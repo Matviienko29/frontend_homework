@@ -1,0 +1,15 @@
+.center {
+    width: 400px; 
+    padding: 10px; 
+    margin: auto; 
+    background: #fff; 
+	
+body {
+    font-family: Times New Roman, sans-serif;
+	font-size: 50pt;
+}
+
+.line { 
+    border-left: 2px solid #ccc;
+}
+ 
