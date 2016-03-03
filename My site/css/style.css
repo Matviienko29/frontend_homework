@@ -1,15 +1,30 @@
-.center {
-    width: 400px; 
-    padding: 10px; 
-    margin: auto; 
-    background: #fff; 
-	
 body {
-    font-family: Times New Roman, sans-serif;
-	font-size: 50pt;
+	background-color:#fff;
 }
 
-.line { 
-    border-left: 2px solid #ccc;
+.begin{
+	padding-top:0px;
+ 	text-align:center;
 }
- 
+
+.hr{
+ 	padding-left:450px;
+ 	padding-right:450px;
+	margin:0px;
+}
+
+.otvet{
+	padding-left:500px;
+    font-size:18px;
+}
+
+li{
+	margin:0;
+}
+	
+p{
+ 	padding-top:10px ;
+ 	margin:0px;
+}
+	
+	
