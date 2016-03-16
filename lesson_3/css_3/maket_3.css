@@ -27,7 +27,7 @@ body{
 .menu{
   position: relative;
   overflow: hidden;
-  margin-top: 40px$
+  margin-top: 40px;
   background: #7db9e8; /* Old browsers */
   background: -moz-linear-gradient(top,  #7db9e8 0%, #8d8b8b 0%, #2e2d2d 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #7db9e8 0%,#8d8b8b 0%,#2e2d2d 100%); /* Chrome10-25,Safari5.1-6 */
@@ -45,6 +45,12 @@ body{
   font-size: 14px;
   text-decoration: none;
 }
+
+.menu a:hover{
+  background: #373737;
+  padding-left: 35px;
+}
+
 
 /*CONTENT*/
 .content{
