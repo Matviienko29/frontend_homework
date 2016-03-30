@@ -1,0 +1,35 @@
+{
+  margin: 0;
+  padding: 0;
+}
+table {
+	margin: 0 auto;
+	width: 500px;
+	height: 540px;
+	border-spacing: 0;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td {
+	border: 8px solid #000;
+}
+
+.line-eight, .line-nine {
+	height: 6%;
+}
+.white {
+  background-color: white;
+}
+.yellow {
+  background-color: #fce753;
+}
+.red {
+  background-color: #ff553f;
+}
+.blue {
+  background-color: #11518e;
+}
+.black {
+  background-color: #2b2b2b;
+}
