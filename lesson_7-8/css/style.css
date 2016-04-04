@@ -232,7 +232,7 @@ nav {
 .container__theme:last-child {
   padding-top:16px;
 }
-.container__mark {
+.container__point {
   float: left;
   margin: 18px 9px;
   height: 28px;
@@ -240,20 +240,20 @@ nav {
   display: inline-block;
   background: url('../images/sprite.png') 0 0 no-repeat;
 }
-.cloud {
+.feedback {
   background-position: -28px 0;
   margin: 18px 10px;
 }
-.music {
+.audio {
   background-position: -61px 0;
 }
-.container__mark:hover {
+.container__point:hover {
   background-position: 0 -30px;
 }
-.cloud:hover {
+.feedback:hover {
   background-position: -28px -30px;
 }
-.music:hover {
+.audio:hover {
   background-position: -61px -30px;
 }
 .content {
