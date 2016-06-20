@@ -26,7 +26,7 @@
   font-style: normal;
 }
 
-/*mobile*/
+/*mobile view*/
 
 .wrapper {
   margin: 0 auto;
@@ -35,47 +35,31 @@
   height: inherit;
   position: relative;
   overflow: hidden;
-  background-image: url('../images/bg.png');
+  background-image: url('../img/bg.png');
   background-position: top center;
 }
-.header {
+header {
   max-width: 960px;
   margin: 0 auto;
   height: 205px;
   width: 100%;
   padding-top: 66px;
 }
-.logo-top {
+.logo-box {
   margin: 0 auto 20px;
   display: block;
   width: 100%;
 }
 .logo {
-  width: 161px;
+  width: 155px;
   height: 48px;
   margin: 0 auto;
 }
-.logo__theme {
-  float: left;
-  margin-left: 2px;
-  font-family: "League Gothic Regular", Arial, sans-serif;
-  font-size: 48px;
-  text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  letter-spacing: -0.5px;
+.logo__img {
+  padding-top: 1px;
+  padding-left: 1px;
 }
-.logo__theme--color {
-  color:  #62446F;
-  /*color: transparent;*/
-  background: -webkit-linear-gradient(#34263b, #745083);
-  /*background:   -moz-url('img/er.png');*/
-  background:         linear-gradient(#34263b, #745083);
-  -webkit-background-clip: text;
-          background-clip: text;
-  text-shadow: none;
-}
-.nav {
+nav {
   clear: left;
   display: block;
   width: 100%;
@@ -84,7 +68,7 @@
 .menu {
   display: none;
 }
-.menu__theme {
+.menu__item {
   float: left;
   list-style: none;
 }
@@ -93,16 +77,16 @@
   font-family: "League Gothic Regular", Arial, sans-serif;
   font-size: 24px;
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
-.sub-menu {
+.drop-menu {
   display: block;
   margin: 0 auto;
   width: 51%;
 }
-.sub {
+.drops {
   display: none;
   position: absolute;
   width: 99%;
@@ -115,7 +99,7 @@
   border-bottom-right-radius: 10px;
   z-index: 2;
 }
-.sub-menu__button {
+.drop-menu__button {
   position: relative;
   margin-top: 1px;
   text-align: center;
@@ -127,21 +111,21 @@
   line-height: 1.4;
   border-bottom: 2px solid #edbfff;
 }
-.sub-menu__button:hover {
+.drop-menu__button:hover {
   border-bottom: 2px solid #edbfff;
   background-color: #2b2231;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   height: 46;
 }
-.sub-menu__button:hover .drop__link {
+.drop-menu__button:hover .drop__link {
   border-color: transparent;
 }
-.sub-menu__button:hover .sub {
+.drop-menu__button:hover .drops {
   display: block;
   z-index: 2;
 }
-.sub__theme {
+.drop__item {
   display: block;
   box-sizing: border-box;
   position: relative;
@@ -152,19 +136,19 @@
   height: 40px;
   text-align: center;
 }
-.sub__theme:hover {
+.drop__item:hover {
   border-bottom: 2px solid #edbfff;
   background-color: #2b2231;
   height: 40px;
 }
-.sub__theme:first-child {
+.drop__item:first-child {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-.sub__theme:last-child {
+.drop__item:last-child {
   border-bottom: none;
 }
-.sub__theme:last-child:hover {
+.drop__item:last-child:hover {
   border-bottom: 2px solid #edbfff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -180,12 +164,12 @@
   padding-top: 25px;
   max-width: 960px;
 }
-.slider__theme {
+.slider__item {
   margin: 0 auto;
   padding-left: 15px;
   width: 64%;
 }
-.slider__theme__title {
+.slider__item__title {
   font-family: "League Gothic Regular", Arial, sans-serif;
   font-size: 36px;
   text-transform: capitalize;
@@ -195,7 +179,7 @@
   line-height: 1.1;
   letter-spacing: -0.3px;
 }
-.slider__theme--second__title {
+.slider__item--second__title {
   text-transform: uppercase;
   font-size: 18px;
   color: #edbfff;
@@ -203,7 +187,7 @@
   height: 18px;
   overflow: hidden;
 }
-.slider__theme__text {
+.slider__item__text {
   display: none;
   font-family: "OpenSans Light", Arial, sans-serif;
   color: #fff;
@@ -239,36 +223,36 @@
 .container {
   margin: 0 auto;
 }
-.container__theme {
+.container__item {
   list-style: none;
   padding-left: 21px;
   display: inline-block;
 }
-.container__theme:last-child {
+.container__item:last-child {
   padding-top:16px;
 }
-.container__point {
+.container__mark {
   float: left;
   margin: 18px 9px;
   height: 28px;
   width: 27px;
   display: inline-block;
-  background: url('../images/sprite.png') 0 0 no-repeat;
+  background: url('../img/sprite.png') 0 0 no-repeat;
 }
-.feedback {
+.cloud {
   background-position: -28px 0;
   margin: 18px 10px;
 }
-.audio {
+.music {
   background-position: -61px 0;
 }
-.container__point:hover {
+.container__mark:hover {
   background-position: 0 -30px;
 }
-.feedback:hover {
+.cloud:hover {
   background-position: -28px -30px;
 }
-.audio:hover {
+.music:hover {
   background-position: -61px -30px;
 }
 .content {
@@ -325,7 +309,7 @@
   margin: 0 auto;
   width: 87%;
   background-size: 160%;
-  background: url('../images/news.png') 0 0 no-repeat;
+  background: url('../img/news.png') 0 0 no-repeat;
 }
 .news__content {
   padding-top: 24px;
@@ -435,7 +419,7 @@
   height: 48px;
   width: 48px;
   display: inline-block;
-  background: url('../images/sprite1.png') 0 0 no-repeat;
+  background: url('../img/sprite1.png') 0 0 no-repeat;
 }
 .second {
   background-position: 0 -49px;
@@ -443,28 +427,28 @@
 .third {
   background-position: 0 -97px;
 }
-.logotypes-box {
+.logos-box {
   width: 100%;
   background-color: #f9f9f9;
   border-top: 1px solid #e6e6e6;
 }
-.logotype {
+.logos {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding-bottom: 71px;
 }
-.logotype__img:first-child {
+.logos__img:first-child {
   padding-top: 49px;
   padding-left: 19.4%;
   padding-right: 15.6%;
 }
-.logotype__img:nth-child(3) {
+.logos__img:nth-child(3) {
   padding-top: 57px;
   padding-left: 22.2%;
   padding-right: 17.2%;
 }
-.logotype__img:nth-child(5) {
+.logos__img:nth-child(5) {
   padding-top: 38px;
   padding-left: 12.2%;
   padding-right: 15%;
@@ -496,6 +480,16 @@
   text-align: left;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
 }
+.logo__item {
+  float: left;
+  margin-left: 2px;
+  font-family: "League Gothic Regular", Arial, sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
 .list__title--logo {
   float: left;
 }
@@ -511,7 +505,7 @@
 .footer__menu-box {
     clear: both;
     height: 200px;
-    background: url('../images/footer_bg1.png') 0 0 no-repeat;
+    background: url('../img/footer_bg1.png') 0 0 no-repeat;
 }
 .footer__menu {
   margin: 0 auto;
@@ -532,4 +526,5 @@
 }
 .footer__item--bold {
   font-family: "OpenSans Extra-bold", Arial, sans-serif;
+  font-weight: bold;
 }
