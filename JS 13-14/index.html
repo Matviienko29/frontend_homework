@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Test</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <script src="js/tmpl.js"></script>
-  <script src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <title>Homework JS 13-14</title>
 </head>
 <body>
+<script type="text/template" id="test">
     <div class="wrapper">
-        <script type="text/html" id="test">
-            <h1><%= header %></h1>
-            <form action="#" method="post">
+    <header><%= header %></header>
+        <form action="#" method=" ">
+            <ol>
                 <% for (var i = 0; i < questions.length; i++) { %>
-                <div>
-                    <p><%= (i+1) + '. ' + questions[i].title %></p>
+                <li><h4><%= questions[i].title %></h4>
                     <% for (var j = 0; j < questions[i].answers.length; j++) { %>
-                        <div>
-                            <input type="radio"
-                            name="<%= questions[i].radioname %>"
-                            id="<%= questions[i].id[j] %>" />
-                            <label for="<%= questions[i].id[j] %>">
-                            <%= questions[i].answers[j] %></label>
-                        </div>
+                    <p>
+                        <input type="checkbox" name="<%= questions[i].checkboxname[j] %>" id="<%= questions[i].id[j] %>"/>
+                        <label for="<%= questions[i].id[j] %>"><%= questions[i].answers[j] %></label>
+                    </p>
                     <% }; %>
-                </div>
+                </li>
                 <% }; %>
-                <button><%= submit %></button>
-            </form>
-        </script>
+            </ol>
+            <footer>
+                <input type="submit" value="<%= submit %>"/>
+            </footer>
+        </form>
     </div>
+</script>
 </body>
 </html>
