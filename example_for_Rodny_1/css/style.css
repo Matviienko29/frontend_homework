@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Helvetica Neue', Tahoma, sans-serif;
+
+}
+
+body {
+	background-image: url(../img/bg.png);
+	background-size: cover;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*MIDDLE*/
+
+.wrapper {
+	width: 450px;
+	background: rgba(0, 0, 0, 0.5);
+	margin: 150px auto;
+}
+
+.registry {
+		padding: 20px;
+		text-align: 	center;
+		margin: 0 auto;
+		display: 	block;
+		width: 	225px;
+}
+
+
+.forms  {
+	line-height: 	40px;
+	margin: 5px;
+	padding: 	0 25px;
+	background: 	#000;
+	border: 0 solid grey;
+	border-bottom: 	1px solid grey;
+	color: white;
+	width: 175px;
+  background: #084a81;
+
+}
+
+.forms:focus {
+	background: #1b5288;
+	box-shadow: 0px 0px 5px 3px rgba(27,82,136,0.8);
+	border-bottom: 1px solid #1f5384;
+	border: 1px solid #689bcc;
+}
